@@ -1,1 +1,4 @@
-
+This architecture shows a Zero Trust system for a financial cloud setup that uses AI nothing in the system is trusted by default so every request has to be checked before it goes through.Users like customers or employees try to access the system, and their identity is verified through things like authentication and MFA
+After that, the request goes through an AI security gateway -> 
+This layer checks if the request is safe, looks for things like prompt injection attacks and makes sure it follows security rules If everything looks good the request is sent to the AI service like fraud detection or financial analysis systems. This  system then process the request and may access sensitive data which is stored securely and encrypted
+On the side there is also monitoring and compliance which keeps track of activity logs events and helps detect anything suspicious this setup follows the idea of never trust and always verify which is what Zero Trust is all about
